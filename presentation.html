@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/#50 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sass : Syntactically Awesome Style Sheets</title>
+    <link href="./assets/css" rel="stylesheet" type="text/css">
+    <link href="./assets/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/styles/styles.css">
+  <style type="text/css"></style></head>
+  <body>
+    <article class="bespoke-parent">
+      <section class="bespoke-slide bespoke-active" style="zoom: 1.29791666666667;">
+        <img height="100" alt="Sass-logo" src="./assets/sass-logo.png">
+        <h3>Syntactically Awesome Style Sheets<br>CSS With Superpower!</h3>
+        <h3><a href="https://twitter.com/tenosiswono">@tenosiswono</a></h3><img src="./assets/me.jpg" class="avatar avatar--small">
+      </section>
+      <section data-bespoke-state="green" class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-1" style="zoom: 1.29791666666667;">
+        <h2>A brief history of Sass</h2>
+      </section>
+      <section class="gif gif--fight bespoke-slide bespoke-inactive bespoke-after bespoke-after-2" style="zoom: 1.29791666666667;">
+        <h2>Sass vs CSS</h2>
+      </section>
+      <section class="frustation gif bespoke-slide bespoke-inactive bespoke-after bespoke-after-3 light" style="zoom: 1.29791666666667;">
+        <h3 class="bullet bespoke-bullet bespoke-bullet-active">CSS is a Nightmare</h3>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active">Vendor-specific prefixes in CSS3</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active">Replacing color value in a project</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active">Copying and pasting a style<br>(over and over again)</li>
+        </ul>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-4" style="zoom: 1.29791666666667;">
+        <h3 class="bullet bespoke-bullet bespoke-bullet-active">Fixing CSS</h3>
+        <ul>
+          <li class="bullet bespoke-bullet bespoke-bullet-active">Make it <strong>intellegent</strong></li>
+          <li class="bullet bespoke-bullet bespoke-bullet-active">Make it <strong>scalable</strong></li>
+          <li class="bullet bespoke-bullet bespoke-bullet-active">Make it <strong>reusable</strong></li>
+        </ul>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-5" style="zoom: 1.29791666666667;">
+        <h3 class="bullet bespoke-bullet bespoke-bullet-active">Syntactically <strong>Awesome</strong> Style Sheets</h3>
+        <ul>
+          <li class="bullet bespoke-bullet bespoke-bullet-active">First developed in 2007</li>
+        </ul>
+      </section>
+      <section class="awesome gif bespoke-slide bespoke-inactive bespoke-after bespoke-after-6" style="zoom: 1.29791666666667;">
+      </section>
+      <section class="bespoke-slide bbespoke-inactive bespoke-after bespoke-after-7" style="zoom: 1.29791666666667;"><img height="160" alt="Glasses" src="http://sass-lang.com/assets/img/illustrations/glasses-2087d741.svg"><br>
+        <blockquote>Sass is the most <strong>mature</strong>, <strong>stable</strong>, and <strong>powerful</strong> professional grade CSS extension language in the world.</blockquote><br>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-8" style="zoom: 1.29791666666667;">
+        <h3>Preprocessing</h3>
+        <blockquote>It will take your preprocessed Sass file and save it out as a normal CSS file that you can use in your web site.</blockquote><br>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-9" style="zoom: 1.29791666666667;">
+        <h3>Styleguide</h3>
+        <blockquote>Sass should be kept as <strong>simple</strong> as it can be.</blockquote><br>
+      </section>
+      <section data-bespoke-state="green" class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-6" style="zoom: 1.29791666666667;">
+        <h2>Sass Primary Features</h2>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-10" style="zoom: 1.29791666666667;">
+        <h3>Variable</h3>
+        <pre class="highlight scss"><code><span class="nv">$font-stack</span><span class="p">:</span>    <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="nv">$font-stack</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-11" style="zoom: 1.29791666666667;">
+        <h3>Variable <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-12" style="zoom: 1.29791666666667;">
+        <h3>Nesting</h3>
+        <pre class="highlight scss"><code><span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">li</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span> <span class="p">}</span>
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-13" style="zoom: 1.29791666666667;">
+        <h3>Nesting <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nt">nav</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">nav</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-14" style="zoom: 1.29791666666667;">
+        <h3 class="bullet bespoke-bullet bespoke-bullet-active">Partials</h3>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active"><strong>CSS</strong> need HTTP Request</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active"><strong>Sass</strong> take file and combine</li>
+        </ul>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-15" style="zoom: 1.29791666666667;">
+        <h3>Partials <small>partial file</small></h3>
+        <pre class="highlight scss"><code><span class="c1">// _reset.scss
+</span>
+<span class="nt">html</span><span class="o">,</span>
+<span class="nt">body</span><span class="o">,</span>
+<span class="nt">ul</span><span class="o">,</span>
+<span class="nt">ol</span> <span class="p">{</span>
+   <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-16" style="zoom: 1.29791666666667;">
+        <h3>Partials <small>main file</small></h3>
+        <pre class="highlight scss"><code><span class="cm">/* base.scss */</span>
+
+<span class="k">@import</span> <span class="s1">'reset'</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="mh">#efefef</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-17" style="zoom: 1.29791666666667;">
+        <h3>Partials <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#efefef</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-18" style="zoom: 1.29791666666667;">
+        <h3>Mixins</h3>
+        <pre class="highlight scss"><code><span class="k">@mixin</span> <span class="nf">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="na">-webkit-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+     <span class="na">-moz-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+      <span class="na">-ms-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+          <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span> <span class="k">@include</span> <span class="nd">border-radius</span><span class="p">(</span><span class="m">10px</span><span class="p">);</span> <span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-19" style="zoom: 1.29791666666667;">
+        <h3>Mixins <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">-webkit-border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">-moz-border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">-ms-border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-20" style="zoom: 1.29791666666667;">
+        <h3>Extend/Inheritance</h3>
+        <pre class="highlight scss"><code><span class="nc">.message</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.success</span> <span class="p">{</span>
+  <span class="k">@extend</span> <span class="nc">.message</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-21" style="zoom: 1.29791666666667;">
+        <h3>Extend/Inheritance <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nc">.message</span><span class="o">,</span> <span class="nc">.success</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cccccc</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.success</span> <span class="p">{</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-22" style="zoom: 1.29791666666667;">
+        <h3>Operators</h3>
+        <pre class="highlight scss"><code><span class="nc">.container</span> <span class="p">{</span> <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="nt">article</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"main"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">600px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">aside</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"complimentary"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-23" style="zoom: 1.29791666666667;">
+        <h3>Operators <small>result</small></h3>
+        <pre class="highlight css"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">article</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"main"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">62.5%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">aside</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"complimentary"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">31.25%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-24" style="zoom: 1.29791666666667;">
+        <h3>Sass Frameworks</h3>
+        <span id="compass-logo"></span>
+      </section>
+      <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-25" style="zoom: 1.29791666666667;">
+        <h3>Compass</h3>
+        <blockquote>Compass is a Sass frameworks extension focused on CSS3 and layouts.</blockquote><br>
+        <blockquote>Essentially, a big set of Mixins</blockquote>
+      </section>
+      <section data-bespoke-state="green" class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-26" style="zoom: 1.29791666666667;">
+        <img alt="vs-logo" src="./assets/vslogo.png">
+        <h2>Sass in Visual Studio</h2>
+        <h3>2015</h3>
+      </section>
+      <section class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-27" style="zoom: 1.29791666666667;">
+        <img src="./assets/npm.svg" alt="night wombat">
+      </section>
+    <section data-bespoke-state="white" class="logo logo--gulp bespoke-slide bespoke-inactive bespoke-after bespoke-after-19" style="zoom: 0.660416666666667;"></section>
+    <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-28" style="zoom: 1.29791666666667;">
+        <h3>Add Dependencies on package.json</h3>
+<pre class="highlight scss"><code><span class="p">{</span>
+  <span class="nl">. . . . .</span>
+
+  <span class="s2">"devDependencies"</span><span class="p">:</span><span class="p">{</span>
+    <span class="s2">"gulp"</span><span class="p">:</span><span class="s2">"^3.8.10"</span><span class="p">,</span>
+    <span class="s2">"gulp-sass"</span><span class="p">:</span><span class="s2">"2.0.3"</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</section>
+    <section class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-29" style="zoom: 1.29791666666667;">
+        <h3>Give GULP Some Task</h3>
+<pre class="highlight javascript"><code><span class="s1">var </span><span class="nl">gulp </span><span class="p">= </span><span class="nl">require</span><span class="p">(</span><span class="sl">'gulp'</span><span class="p">)</span>
+<span class="s1">var </span><span class="nl">sass </span><span class="p">= </span><span class="nl">require</span><span class="p">(</span><span class="sl">'gulp-sass'</span><span class="p">)</span>
+<span class="nl">gulp</span><span class="p">.</span><span class="s1">task</span><span class="p">(</span><span class="sl">'sass-compile'</span><span class="p">, </span><span class="s1">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+  <span class="nl">gulp</span><span class="p">.</span><span class="s1">src</span><span class="p">(</span><span class="sl">'./Content/style.scss'</span><span class="p">)</span>
+    <span class="p">.</span><span class="s1">pipe</span><span class="p">(</span><span class="nl">sass()</span><span class="p">)</span>
+    <span class="p">.</span><span class="s1">pipe</span><span class="p">(</span><span class="nl">gulp</span><span class="p">.</span><span class="s1">dest</span><span class="p">(</span><span class="sl">'./Content/'</span><span class="p">)</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nl">gulp</span><span class="p">.</span><span class="s1">task</span><span class="p">(</span><span class="sl">'watch-sass'</span><span class="p">, </span><span class="s1">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+  <span class="nl">gulp</span><span class="p">.</span><span class="s1">watch</span><span class="p">(</span><span class="sl">'./Content/*.scss'</span><span class="p">, [</span><span class="sl">'sass-compile'</span><span class="p">]);</span>
+<span class="p">});</span>
+</code></pre>
+</section>
+<section class="bespoke-slide bespoke-inactive bespoke-inactive bespoke-after bespoke-after-30" style="zoom: 0.660416666666667;">
+        <h1>Thank you!</h1>
+        <h3><a href="https://twitter.com/markdalgleish">@tenosiswono</a></h3><img src="./assets/me.jpg" class="avatar avatar--small">
+      </section>
+    <script src="./assets/scripts.js"></script>
+</body></html>
