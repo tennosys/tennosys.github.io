@@ -1,0 +1,30 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Tennosys
+tagline:             wumbo!
+url:                 http://tennosys.github.io/
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              tenosiswono
+  url:               https://twitter.com/tenosiswono
+  email:             tennosys@gmail.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/tennosys/tennosys.github.io
