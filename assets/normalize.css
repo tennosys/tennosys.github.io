@@ -264,3 +264,6 @@ body .frustation {
 body .awesome {
   background-image: url('./awesome.gif');
 }
+body .darkcoy {
+    color: #000 !important;
+}
