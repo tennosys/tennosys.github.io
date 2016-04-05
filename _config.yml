@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Tennosys
 tagline:             wumbo!
-url:                 http://tennosys.github.io/
+url:                 https://tennosys.github.io/
 paginate:            5
 baseurl:             ""
 
