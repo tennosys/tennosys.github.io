@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Protecting vs Reversing &mdash; Of .NET Desktop Application</title>
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+  <body>
+    <article>
+      <section><img src="images/profile.jpg" class="avatar">
+        <h4>@tenosiswono</h4>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--orion" class="orion undefined">
+        <h1>Protecting <br />vs<br />Reversing</h1>
+      </section>
+      <section>
+        <h3>of</h3>
+        <h2>.NET Desktop Application</h2>
+      </section>
+      <section>
+        <h2>{ }</h2>
+      </section>
+      <section>
+        <h2>{ protected: true }</h2>
+      </section>
+      <section>
+        <h2 class="single-words">No idea it secured</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--schneier" class="schneier undefined">
+        <h3 style="width:490px">&ldquo;If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology.&rdquo; </h3>
+        <h4>&mdash; Bruce Schneier (Cryptographer) &mdash;</h4>
+      </section>
+      <section>
+        <h2 class="bullet">Solution?</h2>
+        <h3 class="bullet">Make it Hard to Reversed</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Packing</h2>
+        <h3 class="bullet">Virtualized packer</h3>
+        <h3 class="bullet">Pack your .NET executable into Virtualizer.</h3>
+      </section>
+      <section>
+        <h3 class="bullet">VMProtect</h3>
+        <h3 class="bullet">Themida</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Obfuscate</h2>
+        <h3 class="bullet">Obfuscate your code</h3>
+      </section>
+      <section>
+        <h3 class="bullet">Agile.NET</h3>
+        <h3 class="bullet">Eazfuscator.NET</h3>
+        <h3 class="bullet">Dotfuscator</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Asymmetric Encryption</h2>
+        <h3 class="bullet">To generate your product licenses.</h3>
+        <h3 class="bullet">Only you can generate your license codes.</h3>
+        <h3 class="bullet">Impossible to reverse the key generating algorithm.</h3>
+      </section>
+      <section>
+        <h3 class="bullet">Public-Private Key Cryptography</h3>
+        <h3 class="bullet">Digital Signature Algorithm</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Strong Name</h2>
+        <h3 class="bullet">Ensure that when you load a DLL you get exactly the DLL you were expecting and not some other DLL that happens to have the same name.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Anti-debugging</h2>
+        <h3 class="bullet">Protect against a managed debugger or a native debugger</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Anti-dumping</h2>
+        <h3 class="bullet">Prevent from capturing/dumping the state of the executable at a particular point in time.</h3>
+      </section>
+      <section>
+        <h2>{ }</h2>
+      </section>
+      <section>
+        <h2>{ protected: false }</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--darkside" class="darkside undefined">
+        <h2>Join the Dark Side</h2>
+      </section>
+      <section>
+        <h2 class="bullet">Reverse Engineering</h2>
+        <h3 class="bullet">Process for discovering the technological principles of a human made device, object or system through the analysis of its structure, function and operation.</h3>
+      </section>
+      <section>
+        <h2 class="single-words">How to learn</h2>
+      </section>
+      <section>
+        <h2 class="bullet">Understanding PE structure</h2>
+        <h3 class="bullet">The PE format is a data structure that encapsulates the information necessary for the Windows OS loader to manage the wrapped executable code.</h3>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--peformat" class="peformat undefined">
+      </section>
+      <section><img src="images/tldr.gif" class="bullet">
+      </section>
+      <section>
+        <h2 class="single-words">Let's Just Practice</h2>
+      </section>
+      <section>
+        <h2 class="single-words">and using tools</h2>
+      </section>
+      <section>
+        <h2>Find the Target</h2>
+        <h3>Just try with "DomDomSoft Manga Downloader"</h3>
+      </section>
+      <section>
+        <h2>Get PE Information</h2>
+        <h3>Using Binary Analysis tools </h3><a href="https://github.com/horsicq/Detect-It-Easy">
+          <h3>(https://github.com/horsicq/Detect-It-Easy)</h3></a>
+      </section>
+      <section>
+        <h2>Protected?</h2>
+      </section>
+      <section>
+        <h2>Remove Protector</h2>
+        <h3>Using de4dot </h3><a href="https://github.com/0xd4d/de4dot">
+          <h3>(https://github.com/0xd4d/de4dot)</h3></a>
+        <pre class="language-javascript"><code>> de4dot "DomDomSoft Manga Downloader.exe"
+</code></pre>
+      </section>
+      <section>
+        <h2>Decompiler</h2>
+        <h3>Using ILSpy</h3><a href="https://github.com/icsharpcode/ILSpy">
+          <h3>(https://github.com/icsharpcode/ILSpy)</h3></a>
+      </section>
+      <section>
+        <h2>Search the Bad boy</h2>
+      </section>
+      <section>
+        <h2>Search Security Algorithm</h2>
+      </section>
+      <section>
+        <h2>Patch or Make Keygen</h2>
+      </section>
+      <section><img src="images/profile.jpg" class="avatar"><br>
+        <h2>Thanks</h2>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
