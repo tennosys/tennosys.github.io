@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>XML and Web Service</title>
+    <link href="./assets/css" rel="stylesheet" type="text/css">
+    <link href="./assets/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./assets/presentation.css">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+  <style type="text/css"></style></head>
+  <body>
+    <article class="bespoke-parent">
+      <section class="bespoke-slide bespoke-active" style="zoom: 1.29791666666667;">
+        <h3>XML and Web Service</h3>
+        <h3><a href="#">@tenosiswono</a></h3><img src="./assets/me.jpg" class="avatar avatar--small">
+      </section>
+      <section data-bespoke-state="green" class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-1" style="zoom: 1.29791666666667;">
+        <h2>E<strong>X</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage</h2>
+      </section>
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">What is XML ?</h2>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Specification for creating custom markup languages.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">W3C Recomendation.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Primary purpose is to help computers to share data.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Meta-Language, for creating other languages.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-3 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">XML Document</h2>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Every XML is Text-Based.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Sharing Data.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Platform Independence.</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-12" style="zoom: 1.29791666666667;">
+        <h3>Generic XML Example</h3>
+        <pre class="highlight scss"><code>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
+<span style="color: #007700">&lt;presentation&gt;</span>
+	<span style="color: #007700">&lt;slide</span> <span style="color: #0000CC">number=</span><span style="background-color: #fff0f0">&quot;1&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;name&gt;</span>XML : Introduction<span style="color: #007700">&lt;/name&gt;</span>
+		<span style="color: #007700">&lt;contents&gt;</span>XML is...<span style="color: #007700">&lt;/contents&gt;</span>
+	<span style="color: #007700">&lt;/slide&gt;</span>
+<span style="color: #007700">&lt;/presentation&gt;</span>
+</pre></div>
+</code></pre>
+      </section>
+      <section data-bespoke-state="green" class="light bespoke-slide bespoke-inactive bespoke-after bespoke-after-6" style="zoom: 1.29791666666667;">
+        <h2>WEB Service</h2>
+      </section>
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">What's a WEB Service ?</h2>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Just a web page meant for a computer to request and process.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Meant to be consumed by other program or applicaions.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Even more percisely the name it self indicate that its a service which available over the web.</li>	
+        </ul>
+      </section>
+
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Architecture</h2>
+
+        <img height="183px" alt="Sass-logo" src="./assets/ws.png">
+      </section>
+
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Benefits</h2>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Simple - Supported on many platforms.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Stateless - a request is made, then result is returned and connection closes, no permanet connection.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Firewall Friendly - uses HTTP, not usually blocked.</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Loosely Coupled - The interface can be extended.</li>	
+        </ul>
+      </section>
+
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">Types of Web Service</h2>
+        <ul>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy"><strong>SOAP (simple object acess protocol)</strong></li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">WDSL (Web Service Description Language) - XML based document defines the service interface, protocol bindings, and service endpoint addresses</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy">UDDI (Universal Description, Discovery and Integration) - Repository/database of service</li>
+        <li class="bullet bespoke-bullet bespoke-bullet-active darkcoy"><strong>REST (Representational state transfer)</strong></li>
+        </ul>
+      </section>
+
+      <section data-bespoke-state="green" class="bespoke-slide bespoke-inactive bespoke-after bespoke-after-2 light" style="zoom: 1.29791666666667;">
+        <h2 class="bullet bespoke-bullet bespoke-bullet-active darkcoy">SOAP Architecture</h2>
+
+        <img height="300px" alt="Sass-logo" src="./assets/soap.gif">
+      </section>
+
+      <section class="bespoke-slide bespoke-inactive bespoke-inactive bespoke-after bespoke-after-30" style="zoom: 0.660416666666667;">
+        <h1>Q&amp;A</h1>
+        <img height="252px" alt="Sass-logo" src="./assets/qa.gif">
+      </section>
+
+      <section class="bespoke-slide bespoke-inactive bespoke-inactive bespoke-after bespoke-after-30" style="zoom: 0.660416666666667;">
+        <h1>Thank you!</h1>
+        <h3><a href="#">@tenosiswono</a></h3><img src="./assets/me.jpg" class="avatar avatar--small">
+      </section>
+      <script src="./assets/scripts.js"></script>
+    </article>
+  </body>
+</html> 
